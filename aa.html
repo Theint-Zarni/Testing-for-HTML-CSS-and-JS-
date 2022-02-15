@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Registration</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function showData() {
+		var name = document.getElementById("name").value;
+		var age = document.getElementById("age").value;
+		var address = document.getElementById("address").value;
+		var gender = document.querySelector('input[name="gender"]:checked').value;
+		var married = document.querySelector('input[name="married"]:checked').value;
+		var reading = document.getElementById("reading").value;
+		var singing = document.getElementById("singing").value;
+		var swimming = document.getElementById("swimming").value;
+		document.getElementById("result").value=("Name is  " + name + "\n" + "Age is  " + age + "\n" + "Address  " + address + "\n" + "Gender  " + gender + "\n" + "Married  " + married + "\n" + "Hobby is  " + singing + ", " + reading + ", " + swimming);
+	}
+	</script>
+	<form>
+	<table>
+			<tr>
+				<td>Name: </td>
+				<td><input type="text" name="name" id="name"></td>
+			</tr>
+			<tr>
+				<td>Age: </td>
+				<td><input type="text" name="age" id="age"></td>
+			</tr>
+			<tr>
+				<td>Address: </td>
+				<td><input type="text" name="address" id="address"></td>
+			</tr>
+			<tr>
+				<td>Gender:	</td>
+				<td><input type="radio" name="gender" value="male"> Male
+	  				<input type="radio" name="gender" value="female"> Female
+	  			</td>
+	  		</tr>
+	  		<tr>
+				<td>Married: </td>
+				<td><input type="radio" id="married" name="married" value="yes"> Yes
+	  				<input type="radio" id="married" name="married" value="no"> No
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td>Hobby:	</td>
+	  		</tr>
+	  		<tr>
+	  			<td>
+	  				<input type="checkbox" name="Reading" id="reading" value="Reading">Reading
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td>
+	  				<input type="checkbox" name="Singing" id="singing" value="Singing"> Singing
+	  			</td>
+	  		</tr>
+	  		<tr>
+	  			<td>
+	  				<input type="checkbox" name="Swimming" id="swimming" value="Swimming"> Swimming
+	  			</td>
+	  		</tr>
+			<tr>
+				<td>Address: </td>
+				<td>
+					<textarea rows="8" id="result" name="result" cols="25" name="address">
+						
+					</textarea>
+				</td>
+			</tr>
+			<tr>
+				<th>
+				  <input type="button" onclick="showData()"  name="show" id="show" value="Show"></th>
+			</tr>
+	</table>
+</form>
+</body>
+</html>

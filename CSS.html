@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.nav, .sub{
+			font-family: Arial, Helvetica,
+				sans-serif;
+			list-style: none;
+			margin: 0px;
+			padding: 0px;
+		}
+		.nav li{
+			background: #cb1212;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			width: 160px;
+		}
+		.nav li a{
+			display: block;
+			text-decoration: none;
+			color: #fff;
+		}
+		.nav li a:hover{
+			background: blue;
+		}
+		.nav > li {
+			border-right: 1px solid #f00;
+			float: left;
+		}
+		.sub{
+			position: absolute;
+			display: none;
+		}
+		.nav > li:onclick .sub{
+			display: block;
+		}
+		.sub li {
+			border-top: 1px solid #f00;
+		}
+	</style>
+</head>
+<body>
+	<ul class="nav">
+		<li>
+			<a href="#">Home</a>
+		</li>
+		<li>
+			<a href="#">About</a>
+		</li>
+		<li>
+			<a href="#">Contants</a>
+		</li>
+		<li>
+			<a href="#">Services &raquo;</a>
+			<ul class="sub">
+				<li>
+					<a href="#">Social Media</a>
+				</li>
+				<li>
+					<a href="#">Web Development</a>
+				</li>
+				<li>
+					<a href="#">SEQ</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="#">Products</a>
+		</li>
+	</ul>
+</body>
+</html>

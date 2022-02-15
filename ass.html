@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		
+	</style>
+</head>
+<body>
+	<script type="text/javascript">
+		function myFun() {
+			var x = document.getElementById("a").value;
+			console.log(x);
+   			document.getElementById("code").value=x;
+		}
+	</script>
+	<form>
+	<table>
+	  <tr>
+		<th>Choose Country: </th>
+		<th>
+			<select id="a" onclick="myFun()">
+			  <option value="+95">Myanmar</option>
+			  <option value="+65">Singapore</option>
+			  <option value="+81">India</option>
+			  <option value="+27">UAE</option>
+			</select>
+		</th>
+	  </tr>
+	  <tr>
+	  	<th>
+	  		Country Code:
+	  	</th>
+	  	<th>
+	  		<input type="text" id="code" name="code">
+	  	</th>
+	  </tr>
+	</table>
+		</form>
+</body>
+</html>

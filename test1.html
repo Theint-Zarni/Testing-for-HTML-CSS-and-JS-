@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function Myfunction(value) {
+		switch(value){
+			case 1 : 
+			document.getElementById("result").value=parseInt(document.getElementById("num1").value)+parseInt(document.getElementById("num2").value);
+			break;
+			case 2 : 
+			document.getElementById("result").value=parseInt(document.getElementById("num1").value)-parseInt(document.getElementById("num2").value);
+			break;
+			case 3 : 
+			document.getElementById("result").value=parseInt(document.getElementById("num1").value)*parseInt(document.getElementById("num2").value);
+			break;
+			case 4 : 
+			document.getElementById("result").value=parseInt(document.getElementById("num1").value)/parseInt(document.getElementById("num2").value);
+			break;
+		}
+	}
+	</script>
+</head>
+<body>
+	Number1:<input type="text" id="num1">
+	<br>
+	Number2:<input type="text" id="num2">
+	<br>
+	Enter Result<input type="text" id="result"/>
+	<br>
+	<input type="button" onclick="Myfunction(1)" value="+" style="width: :100px; height: 50px;"/>
+	<input type="button" onclick="Myfunction(2)" value="-" style="width: :100px; height: 50px;"/>
+	<input type="button" onclick="Myfunction(3)" value="*" style="width: :100px; height: 50px;"/>
+	<input type="button" onclick="Myfunction(4)" value="/" style="width: :100px; height: 50px;"/>
+</body>
+</html>
